@@ -18,6 +18,8 @@ Before we add the filter, let's set up that relationship. We'll add a `has_one` 
 
 *app/src/ArticlePage.php*
 ```php
+use SilverStripe\Forms\DropdownField;
+
 //...
     private static $has_one = [
         'Photo' => Image::class,
